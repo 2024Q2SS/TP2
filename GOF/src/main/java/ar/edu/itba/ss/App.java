@@ -4,6 +4,9 @@ import java.io.FileReader;
 
 import com.google.gson.Gson;
 import java.nio.file.Paths;
+import java.util.Map;
+import java.util.Set;
+import java.util.HashMap;
 
 public class App {
     private Board board;
@@ -26,18 +29,32 @@ public class App {
         board = new Board(config.getSize());
     }
 
-    public void GOF2D(){
-               
-       
-    
-    
+    public void GOF2D() {
+        board.setCells(config.getDimensions(), config.getDensity());
+        Map<Cell, Set<Cell>> neighbours = new MooreVicinity(1).getNeighbours(board,
+                config.getDimensions());
+        Map<Coordinates, Cell> newMap;
+        while (!board.finalState()) {
+            newMap = new HashMap<>();
+            for (Cell cell : board.getCells()) {
+                Cell newCell = new Cell(cell.getCoordinates());
+                State newState;
+                int aliveNeightbours = neighbours.get(cell).stream().mapToInt(c -> c.getState() == State.ALIVE ? 1 : 0)
+                        .sum();
+                newCell.setState(cell.getState() == State.ALIVE
+                        ? (aliveNeightbours > 1 && aliveNeightbours < 3 ? State.ALIVE : State.DEAD)
+                        : (aliveNeightbours == 3 ? State.ALIVE : State.DEAD));
+                newMap.put(cell.getCoordinates(), newCell);
+            }
+            board.update(neighbours);
+        }
     }
 
     public static void main(String[] args) {
         App app = new App();
         app.setUp();
         System.out.println("setup finished");
-        if(config.getDimensions() == 2){
+        if (config.getDimensions() == 2) {
             app.GOF2D();
         }
 

@@ -23,4 +23,26 @@ public class Cell {
         this.state = state;
     }
 
+    @Override
+    public String toString() {
+        return "Cell{" +
+                "coordinates=" + coordinates +
+                ", state=" + state +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Cell cell = (Cell) o;
+        return coordinates.equals(cell.coordinates);
+    }
+
+    @Override
+    public int hashCode() {
+        return coordinates.hashCode();
+    }
 }
