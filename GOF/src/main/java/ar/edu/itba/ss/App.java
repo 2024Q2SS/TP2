@@ -26,8 +26,21 @@ public class App {
         board = new Board(config.getSize());
     }
 
+    public void GOF2D(){
+               
+       
+    
+    
+    }
+
     public static void main(String[] args) {
         App app = new App();
         app.setUp();
+        System.out.println("setup finished");
+        if(config.getDimensions() == 2){
+            app.GOF2D();
+        }
+
     }
+
 }

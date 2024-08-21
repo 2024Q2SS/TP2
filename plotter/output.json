@@ -1,0 +1,4034 @@
+[
+    {
+        "coordinates": [
+            0,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            0,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            1,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            2,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            3,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            4,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            5
+        ],
+        "state": "alive"
+    },
+    {
+        "coordinates": [
+            5,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            17
+        ],
+        "state": "alive"
+    },
+    {
+        "coordinates": [
+            5,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            5,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            11
+        ],
+        "state": "alive"
+    },
+    {
+        "coordinates": [
+            6,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            18
+        ],
+        "state": "alive"
+    },
+    {
+        "coordinates": [
+            6,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            6,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            5
+        ],
+        "state": "alive"
+    },
+    {
+        "coordinates": [
+            7,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            11
+        ],
+        "state": "alive"
+    },
+    {
+        "coordinates": [
+            7,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            16
+        ],
+        "state": "alive"
+    },
+    {
+        "coordinates": [
+            7,
+            17
+        ],
+        "state": "alive"
+    },
+    {
+        "coordinates": [
+            7,
+            18
+        ],
+        "state": "alive"
+    },
+    {
+        "coordinates": [
+            7,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            7,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            8,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            9,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            10,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            11,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            12,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            13,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            14,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            15,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            16,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            17,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            18,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            19,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            20,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            21,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            22,
+            23
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            0
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            1
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            2
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            3
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            4
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            5
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            6
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            7
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            8
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            9
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            10
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            11
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            12
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            13
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            14
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            15
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            16
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            17
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            18
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            19
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            20
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            21
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            22
+        ],
+        "state": "dead"
+    },
+    {
+        "coordinates": [
+            23,
+            23
+        ],
+        "state": "dead"
+    }
+]

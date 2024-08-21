@@ -12,7 +12,7 @@ public class MooreVicinity implements VicinityRule {
 
     @Override
     public boolean areNeighbours(Cell c1, Cell c2) {
-        return Math.abs(c1.getX() - c2.getX()) <= radius &&
-                Math.abs(c1.getY() - c2.getY()) <= radius;
+        return Math.abs(c1.getCoordinates().getX() - c2.getCoordinates().getX()) <= radius &&
+                Math.abs(c1.getCoordinates().getY() - c2.getCoordinates().getY()) <= radius;
     }
 }

@@ -4,11 +4,13 @@ public class Config {
     private final Integer size;
     private final Integer dimensions;
     private final String system;
+    private final Float density;
 
-    public Config(Integer size, Integer dimensions, String system) {
+    public Config(Integer size, Integer dimensions, String system, Float density) {
         this.size = size;
         this.dimensions = dimensions;
         this.system = system;
+        this.density = density;
     }
 
     @Override
@@ -17,6 +19,7 @@ public class Config {
                 "size=" + size +
                 ", dimensions=" + dimensions +
                 ", system='" + system + '\'' +
+                ", density=" + density + 
                 '}';
     }
 
@@ -30,5 +33,9 @@ public class Config {
 
     public String getSystem() {
         return system;
+    }
+
+    public Float getDensity(){
+        return density;
     }
 }
