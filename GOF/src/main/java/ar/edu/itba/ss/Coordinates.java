@@ -1,21 +1,10 @@
 package ar.edu.itba.ss;
 
-public class Coordinates {
-    private Pair<Double> coordinates;
+public abstract class Coordinates {
 
-    public Coordinates(double x, double y) {
-        coordinates = new Pair<>(x, y);
-    }
+    public abstract Integer getX();
 
-    public double getX() {
-        return coordinates.getFirst();
-    }
+    public abstract Integer getY();
 
-    public double getY() {
-        return coordinates.getSecond();
-    }
-
-    public Double euclideanDistance(Coordinates other) {
-        return Math.sqrt(Math.pow(this.getX() - other.getX(), 2) + Math.pow(this.getY() - other.getY(), 2));
-    }
+    public abstract Integer getZ();
 }

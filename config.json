@@ -1,4 +1,5 @@
 {
-    "Size" : 50;
-    "N" : 60;
+  "size": 50,
+  "dimensions": 2,
+  "system": "conway"
 }
