@@ -31,22 +31,23 @@ public class App {
 
     public void GOF2D() {
         board.setCells(config.getDimensions(), config.getDensity());
-        Map<Cell, Set<Cell>> neighbours = new MooreVicinity(1).getNeighbours(board,
+        Map<Coordinates, Set<Coordinates>> neighbours = new MooreVicinity(1).getNeighbours(board,
                 config.getDimensions());
         Map<Coordinates, Cell> newMap;
         while (!board.finalState()) {
+            System.out.println("Frame: " + board.getFrames());
             newMap = new HashMap<>();
             for (Cell cell : board.getCells()) {
                 Cell newCell = new Cell(cell.getCoordinates());
-                State newState;
-                int aliveNeightbours = neighbours.get(cell).stream().mapToInt(c -> c.getState() == State.ALIVE ? 1 : 0)
+                int aliveNeightbours = neighbours.get(cell.getCoordinates()).stream()
+                        .mapToInt(c -> board.getCell(c).getState() == State.ALIVE ? 1 : 0)
                         .sum();
                 newCell.setState(cell.getState() == State.ALIVE
                         ? (aliveNeightbours > 1 && aliveNeightbours < 3 ? State.ALIVE : State.DEAD)
                         : (aliveNeightbours == 3 ? State.ALIVE : State.DEAD));
                 newMap.put(cell.getCoordinates(), newCell);
             }
-            board.update(neighbours);
+            board.update(newMap);
         }
     }
 
@@ -54,10 +55,10 @@ public class App {
         App app = new App();
         app.setUp();
         System.out.println("setup finished");
+        System.out.println(config);
         if (config.getDimensions() == 2) {
             app.GOF2D();
         }
 
     }
-
 }

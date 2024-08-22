@@ -1,5 +1,6 @@
 {
-  "size": 50,
+  "size": 10,
   "dimensions": 2,
-  "system": "conway"
+  "system": "conway",
+  "density": 1
 }

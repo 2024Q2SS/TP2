@@ -38,7 +38,7 @@ public class Cell {
         if (o == null || getClass() != o.getClass())
             return false;
         Cell cell = (Cell) o;
-        return coordinates.equals(cell.coordinates);
+        return coordinates.equals(cell.coordinates) && state == cell.state;
     }
 
     @Override

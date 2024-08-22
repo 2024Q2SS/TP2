@@ -14,27 +14,29 @@ public class MooreVicinity implements VicinityRule {
         this.radius = radius;
     }
 
-    public void addRelationToMap(HashMap<Cell, Set<Cell>> neighbours, Cell cell, Cell neighbour) {
+    public void addRelationToMap(HashMap<Coordinates, Set<Coordinates>> neighbours, Cell cell, Cell neighbour) {
         // added to neighbour set
-        if (!neighbours.containsKey(neighbour)) {
-            neighbours.put(neighbour, new HashSet<>());
+        if (!neighbours.containsKey(neighbour.getCoordinates())) {
+            neighbours.put(neighbour.getCoordinates(), new HashSet<>());
         }
-        neighbours.get(neighbour).add(cell);
+        neighbours.get(neighbour.getCoordinates()).add(cell.getCoordinates());
         // added to cell set
-        if (!neighbours.containsKey(cell)) {
-            neighbours.put(cell, new HashSet<>());
+        if (!neighbours.containsKey(cell.getCoordinates())) {
+            neighbours.put(cell.getCoordinates(), new HashSet<>());
         }
-        neighbours.get(cell).add(neighbour);
+        neighbours.get(cell.getCoordinates()).add(neighbour.getCoordinates());
     }
 
-    public HashMap<Cell, Set<Cell>> getNeighbours(Board board, Integer dimensions) {
-        HashMap<Cell, Set<Cell>> neighbours = new HashMap<>();
+    public HashMap<Coordinates, Set<Coordinates>> getNeighbours(Board board, Integer dimensions) {
+        HashMap<Coordinates, Set<Coordinates>> neighbourCoordinates = new HashMap<>();
         if (dimensions == 2) {
             for (Cell cell : board.getCells()) {
                 for (int i = -1; i <= radius; i++) {
                     if (i + cell.getCoordinates().getX() == board.getSize() || i + cell.getCoordinates().getX() < 0)
-                        break;
+                        continue;
                     for (int j = 0; j <= radius; j++) {
+                        if (i == -1 && j == 0)
+                            continue;
                         if (i == 0 && j == 0)
                             continue;
                         if (j + cell.getCoordinates().getY() == board.getSize())
@@ -42,11 +44,7 @@ public class MooreVicinity implements VicinityRule {
                         Cell neighbour = board.getCell(
                                 new Coordinates2D(i + cell.getCoordinates().getX(), j + cell.getCoordinates().getY()));
                         if (neighbour != null) {
-                            addRelationToMap(neighbours, cell, neighbour);
-                            if (!neighbours.containsKey(cell)) {
-                                neighbours.put(cell, new HashSet<>());
-                            }
-                            neighbours.get(cell).add(neighbour);
+                            addRelationToMap(neighbourCoordinates, cell, neighbour);
                         } else {
                             throw new RuntimeException("Cell not found");
                         }
@@ -54,6 +52,6 @@ public class MooreVicinity implements VicinityRule {
                 }
             }
         }
-        return neighbours;
+        return neighbourCoordinates;
     }
 }

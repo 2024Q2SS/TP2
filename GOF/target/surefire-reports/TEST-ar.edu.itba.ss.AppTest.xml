@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ar.edu.itba.ss.AppTest" time="0.035" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ar.edu.itba.ss.AppTest" time="0.034" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="AR"/>
     <property name="sun.boot.library.path" value="/home/kerty/.sdkman/candidates/java/22.0.1-open/lib"/>
-    <property name="sun.java.command" value="/home/kerty/SS/TP2/GOF/target/surefire/surefirebooter-20240821120052344_3.jar /home/kerty/SS/TP2/GOF/target/surefire 2024-08-21T12-00-52_262-jvmRun1 surefire-20240821120052344_1tmp surefire_0-20240821120052344_2tmp"/>
+    <property name="sun.java.command" value="/home/kerty/SS/TP2/GOF/target/surefire/surefirebooter-20240822131903052_3.jar /home/kerty/SS/TP2/GOF/target/surefire 2024-08-22T13-19-02_954-jvmRun1 surefire-20240822131903052_1tmp surefire_0-20240822131903052_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/kerty/SS/TP2/GOF/target/test-classes:/home/kerty/SS/TP2/GOF/target/classes:/home/kerty/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/kerty/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar:/home/kerty/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar:/home/kerty/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.jar:/home/kerty/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/home/kerty/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/kerty/SS/TP2/GOF/target/surefire/surefirebooter-20240821120052344_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/kerty/SS/TP2/GOF/target/surefire/surefirebooter-20240822131903052_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
     <property name="user.name" value="kerty"/>
@@ -53,5 +53,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testApp" classname="ar.edu.itba.ss.AppTest" time="0.005"/>
+  <testcase name="testApp" classname="ar.edu.itba.ss.AppTest" time="0.004"/>
 </testsuite>

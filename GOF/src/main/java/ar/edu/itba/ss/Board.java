@@ -2,8 +2,10 @@ package ar.edu.itba.ss;
 
 import java.util.Map;
 import java.util.HashMap;
-
 import java.util.Collection;
+import java.util.List;
+import java.io.FileWriter;
+import java.util.ArrayList;
 
 import com.google.gson.Gson;
 
@@ -12,6 +14,8 @@ public class Board {
     private Integer frames;
     private Map<Coordinates, Cell> cellMap = new HashMap<>();
     private static final Double spawnSize = 0.25;
+
+    private static final List<Map<Coordinates, Cell>> pastStates = new ArrayList<>();
 
     public Board(Integer length) {
         this.size = length;
@@ -39,15 +43,20 @@ public class Board {
 
     public void setCells(Integer dimensions, Float density) {
         if (dimensions == 2) {
-            Integer spawnArea = (int) Math.ceil(Math.pow(size * spawnSize, 2)); // area inicial para las celdas
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
                     Cell aux = new Cell(new Coordinates2D(i, j));
-                    if (inSpawnArea(i, j, spawnArea))
-                        if (Math.random() > 1 - density)
-                            aux.setState(State.ALIVE);
-                        else
-                            aux.setState(State.DEAD);
+                    State state = State.DEAD;
+                    if (Math.floor((1 - spawnSize) * size / 2) < i
+                            && Math.floor((1 + spawnSize) * size / 2) > i
+                            && Math.floor((1 - spawnSize) * size / 2) < j
+                            && Math.floor((1 + spawnSize) * size / 2) > j) {
+                        if (Math.random() > 1 - density) {
+                            state = State.ALIVE;
+                        }
+
+                    }
+                    aux.setState(state);
                     this.addCell(aux);
                 }
             }
@@ -67,11 +76,20 @@ public class Board {
                     return true;
             }
         }
+
+        if (pastStates.contains(cellMap)) {
+            return true;
+        }
         return false;
     }
 
     public Collection<Cell> getCells() {
         return cellMap.values();
+
+    }
+
+    public Integer getFrames() {
+        return frames;
     }
 
     public Cell getCell(Coordinates coordinates) {
@@ -79,11 +97,21 @@ public class Board {
     }
 
     public void update(Map<Coordinates, Cell> map) {
-        cellMap = map;
-        frames++;
         Gson gson = new Gson();
-        System.out.println(gson.toJson(cellMap));
+        try (FileWriter writer = new FileWriter("../output/frame" + frames + ".json")) {
+            gson.toJson(cellMap.values(), writer);
 
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        frames++;
+        pastStates.add(cellMap);
+        cellMap = map;
     }
 
+    public void printMap() {
+        Gson gson = new Gson();
+        System.out.println(gson.toJson(cellMap.values()));
+
+    }
 }
