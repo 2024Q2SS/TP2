@@ -34,16 +34,25 @@ public class App {
         Map<Coordinates, Set<Coordinates>> neighbours = new MooreVicinity(1).getNeighbours(board,
                 config.getDimensions());
         Map<Coordinates, Cell> newMap;
-        while (!board.finalState() &&  board.getFrames() <= 10000 ) {
+        while (!board.finalState() && board.getFrames() <= 10000) {
             System.out.println("Frame: " + board.getFrames());
             newMap = new HashMap<>();
             for (Cell cell : board.getCells()) {
                 Cell newCell = new Cell(cell.getCoordinates());
+
                 int aliveNeightbours = neighbours.get(cell.getCoordinates()).stream()
                         .mapToInt(c -> board.getCell(c).getState() == State.ALIVE ? 1 : 0)
                         .sum();
+
+                if (cell.getCoordinates().getX() == 4 && cell.getCoordinates().getY() == 4) {
+                    System.out.println("Cell: " + cell.getCoordinates());
+                    System.out.println("Alive Neighbours: " + aliveNeightbours);
+                    neighbours.get(cell.getCoordinates())
+                            .forEach(c -> System.out.println(c + " state: " + board.getCell(c).getState()));
+
+                }
                 newCell.setState(cell.getState() == State.ALIVE
-                        ? (aliveNeightbours > 1 && aliveNeightbours < 3 ? State.ALIVE : State.DEAD)
+                        ? (aliveNeightbours > 1 && aliveNeightbours < 4 ? State.ALIVE : State.DEAD)
                         : (aliveNeightbours == 3 ? State.ALIVE : State.DEAD));
                 newMap.put(cell.getCoordinates(), newCell);
             }
