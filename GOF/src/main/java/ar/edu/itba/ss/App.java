@@ -34,7 +34,7 @@ public class App {
         Map<Coordinates, Set<Coordinates>> neighbours = new MooreVicinity(1).getNeighbours(board,
                 config.getDimensions());
         Map<Coordinates, Cell> newMap;
-        while (!board.finalState()) {
+        while (!board.finalState() &&  board.getFrames() <= 10000 ) {
             System.out.println("Frame: " + board.getFrames());
             newMap = new HashMap<>();
             for (Cell cell : board.getCells()) {
