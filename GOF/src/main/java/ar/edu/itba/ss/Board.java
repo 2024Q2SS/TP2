@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Collection;
 import java.util.List;
 import java.io.FileWriter;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 
 import com.google.gson.Gson;
@@ -98,11 +100,16 @@ public class Board {
 
     public void update(Map<Coordinates, Cell> map) {
         Gson gson = new Gson();
-        try (FileWriter writer = new FileWriter("../output/frame" + frames + ".json")) {
+        String path = "output/frame"+ frames + ".json";
+        String rootDir = System.getProperty("user.dir");
+ 
+        if (!Paths.get(path).isAbsolute()) {
+            path = Paths.get(rootDir,path ).toString();
+        }
+        try (FileWriter writer = new FileWriter(path)){
             gson.toJson(cellMap.values(), writer);
-
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         }
         frames++;
         pastStates.add(cellMap);
