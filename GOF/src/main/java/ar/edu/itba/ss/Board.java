@@ -68,18 +68,23 @@ public class Board {
     public Boolean finalState() {
         for (int x = 0; x < size; x += size - 1) {
             for (int y = 0; y < size; y++) {
-                if (cellMap.get(new Coordinates2D(x, y)).getState() == State.ALIVE)
+                if (cellMap.get(new Coordinates2D(x, y)).getState() == State.ALIVE){
+                    System.out.println("termino porque toco el borde");
                     return true;
+                }
             }
         }
         for (int y = 0; y < size; y += size - 1) {
             for (int x = 0; x < size; x++) {
-                if (cellMap.get(new Coordinates2D(x, y)).getState() == State.ALIVE)
+                if (cellMap.get(new Coordinates2D(x, y)).getState() == State.ALIVE){
+                    System.out.println("termino porque toco el borde");
                     return true;
+                }
             }
         }
 
         if (pastStates.contains(cellMap)) {
+            System.out.println("termino porque se repitio el estado");
             return true;
         }
         return false;
