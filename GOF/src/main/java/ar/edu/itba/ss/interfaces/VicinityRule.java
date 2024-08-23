@@ -6,5 +6,5 @@ import ar.edu.itba.ss.Board;
 import ar.edu.itba.ss.Coordinates;
 
 public interface VicinityRule {
-    public HashMap<Coordinates, Set<Coordinates>> getNeighbours(Board board, Integer dimensions);
+    public HashMap<Coordinates, Set<Coordinates>> getNeighbours(Board board);
 }
