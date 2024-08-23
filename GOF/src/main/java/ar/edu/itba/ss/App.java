@@ -26,13 +26,12 @@ public class App {
             e.printStackTrace();
         }
 
-        board = new Board(config.getSize());
+        board = new Board(config.getSize(), config.getDimensions());
     }
 
     public void GOF2D() {
-        board.setCells(config.getDimensions(), config.getDensity());
-        Map<Coordinates, Set<Coordinates>> neighbours = new MooreVicinity(1).getNeighbours(board,
-                config.getDimensions());
+        board.setCells(config.getDensity());
+        Map<Coordinates, Set<Coordinates>> neighbours = new MooreVicinity(1).getNeighbours(board);
         Map<Coordinates, Cell> newMap = new HashMap<>();
         while (!board.finalState() && board.getFrames() <= 10000) {
             System.out.println("Frame: " + board.getFrames());
@@ -59,7 +58,7 @@ public class App {
         app.setUp();
         System.out.println("setup finished");
         System.out.println(config);
-        if (config.getDimensions() == 2) {
+        if (config.getSystem().equals("conway")) {
             app.GOF2D();
         }
 

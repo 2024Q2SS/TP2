@@ -33,12 +33,12 @@ public class MooreVicinity implements VicinityRule {
         if (dimensions == 2) {
             for (Cell cell : board.getCells()) {
                 for (int x = 0; x <= radius; x++) {
-                    if (x + cell.getCoordinates().getX() == board.getSize() || x + cell.getCoordinates().getX() < 0)
+                    if (x + cell.getCoordinates().getX() == board.getSize())
                         continue;
                     for (int y = -radius; y <= radius; y++) {
                         if (x == 0 && (y == -radius || y == 0))
                             continue;
-                        if (y + cell.getCoordinates().getY() == board.getSize())
+                        if (y + cell.getCoordinates().getY() == board.getSize() || y + cell.getCoordinates().getY() < 0)
                             break;
                         Cell neighbour = board.getCell(
                                 new Coordinates2D(x + cell.getCoordinates().getX(), y + cell.getCoordinates().getY()));

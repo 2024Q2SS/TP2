@@ -19,7 +19,7 @@ public class Config {
                 "size=" + size +
                 ", dimensions=" + dimensions +
                 ", system='" + system + '\'' +
-                ", density=" + density + 
+                ", density=" + density +
                 '}';
     }
 
@@ -35,7 +35,7 @@ public class Config {
         return system;
     }
 
-    public Float getDensity(){
+    public Float getDensity() {
         return density;
     }
 }
