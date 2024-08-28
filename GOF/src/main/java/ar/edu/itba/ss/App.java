@@ -32,7 +32,7 @@ public class App {
             e.printStackTrace();
         }
         Config.SystemConfig sysConfig = config.getSystemConfig(config.getSystem());
-        
+
         minAlive = sysConfig.getMinAlive();
         maxAlive = sysConfig.getMaxAlive();
         newCellNum = sysConfig.getNewCell();
@@ -40,56 +40,60 @@ public class App {
         board = new Board(config.getSize(), config.getDimensions());
     }
 
-    public void GOF2D() {
+    public void GOF2D(Integer runNumber) {
         board.setCells(config.getDensity());
         Map<Coordinates, Set<Coordinates>> neighbours = new MooreVicinity(1).getNeighbours(board);
         Map<Coordinates, Cell> newMap = new HashMap<>();
         Integer count = 0;
-        Integer maxNeighbours = new MooreVicinity(1).maxNeighbours(board.getDimensions());
-    
-        String path = Paths.get(rootDir, "output.csv").toString();
+
+        String path = Paths.get(rootDir, config.getSystem() + "_" + config.getDensity() + "_" + runNumber + ".csv")
+                .toString();
         Double avgAliveNeighbours;
         try (PrintWriter csvWriter = new PrintWriter(new FileWriter(path))) {
-        // Escribir encabezado en el CSV
-            csvWriter.println("Frame,AverageAliveNeighbours");
+            // Escribir encabezado en el CSV
+            csvWriter.println("frame,average_alive_cells");
 
             while (!board.finalState() && board.getFrames() <= 10000) {
                 System.out.println("Frame: " + board.getFrames());
                 newMap = new HashMap<>();
-                count = 0;
 
                 for (Cell cell : board.getCells()) {
                     Cell newCell = new Cell(cell.getCoordinates());
-                    count  += cell.getState() == State.ALIVE? 1:0;
+                    count += cell.getState() == State.ALIVE ? 1 : 0;
 
                     int aliveNeighbours = neighbours.get(cell.getCoordinates()).stream()
                             .mapToInt(c -> board.getCell(c).getState() == State.ALIVE ? 1 : 0)
                             .sum();
-                    
+
                     newCell.setState(cell.getState() == State.ALIVE
                             ? (aliveNeighbours >= minAlive && aliveNeighbours <= maxAlive ? State.ALIVE : State.DEAD)
                             : (aliveNeighbours == newCellNum ? State.ALIVE : State.DEAD));
                     newMap.put(cell.getCoordinates(), newCell);
                 }
 
-                avgAliveNeighbours = count/Math.pow(board.getSize(),board.getDimensions()) ;
-            
-                csvWriter.println(board.getFrames() + "," + avgAliveNeighbours);
-                
+                // avgAliveNeighbours = count / Math.pow(board.getSize(),
+                // board.getDimensions());
+                // csvWriter.println(board.getFrames() + "," + avgAliveNeighbours);
+                csvWriter.println(board.getFrames() + "," + count);
+
                 board.update(newMap);
+                count = 0;
             }
-            for(Cell cell : board.getCells()){
-                count += cell.getState() == State.ALIVE? 1:0;
+            for (Cell cell : board.getCells()) {
+                count += cell.getState() == State.ALIVE ? 1 : 0;
             }
-            avgAliveNeighbours = count/Math.pow(board.getSize(),board.getDimensions()) ;
-            csvWriter.println(board.getFrames() + "," + avgAliveNeighbours);
-                
+
+            // avgAliveNeighbours = count / Math.pow(board.getSize(),
+            // board.getDimensions());
+            // csvWriter.println(board.getFrames() + "," + avgAliveNeighbours);
+            csvWriter.println(board.getFrames() + "," + count);
+
             board.update(newMap);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        board.reset();
     }
-
 
     public static void main(String[] args) {
         App app = new App();
@@ -97,7 +101,8 @@ public class App {
         System.out.println("setup finished");
         System.out.println(config);
         if (config.getSystem().equals("conway")) {
-            app.GOF2D();
+            for (int i = 1; i <= config.getRuns(); i++)
+                app.GOF2D(i);
         }
 
     }

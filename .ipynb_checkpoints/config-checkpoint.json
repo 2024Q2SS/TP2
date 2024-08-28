@@ -3,7 +3,7 @@
   "dimensions": 2,
   "system": "conway",
   "density": 0.4,
-  "runs": 10,
+  "runs": 1,
   "systemConfig": {
     "conway": {
       "minAlive": 2,

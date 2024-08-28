@@ -7,14 +7,17 @@ public class Config {
     private final Integer dimensions;
     private final String system;
     private final Float density;
+    private final Integer runs;
     private Map<String, SystemConfig> systemConfig;
 
-    public Config(Integer size, Integer dimensions, String system, Float density, Map<String, SystemConfig> systemConfig) {
+    public Config(Integer size, Integer dimensions, String system, Float density, Integer runs,
+            Map<String, SystemConfig> systemConfig) {
         this.size = size;
         this.dimensions = dimensions;
         this.system = system;
         this.density = density;
         this.systemConfig = systemConfig;
+        this.runs = runs;
     }
 
     @Override
@@ -48,6 +51,10 @@ public class Config {
         return systemConfig.get(systemName);
     }
 
+    public Integer getRuns() {
+        return runs;
+    }
+
     public static class SystemConfig {
         private int minAlive;
         private int maxAlive;
@@ -74,4 +81,5 @@ public class Config {
                     ", newCell=" + newCell +
                     '}';
         }
-    }}
+    }
+}

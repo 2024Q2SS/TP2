@@ -185,4 +185,10 @@ public class Board {
         Gson gson = new Gson();
         System.out.println(gson.toJson(cellMap.values()));
     }
+
+    public void reset() {
+        frames = 0;
+        cellMap.clear();
+        pastStates.clear();
+    }
 }
