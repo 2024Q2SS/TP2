@@ -48,7 +48,7 @@ public class App {
         Integer maxNeighbours = new MooreVicinity(1).maxNeighbours(board.getDimensions());
     
         String path = Paths.get(rootDir, "output.csv").toString();
-
+        Double avgAliveNeighbours;
         try (PrintWriter csvWriter = new PrintWriter(new FileWriter(path))) {
         // Escribir encabezado en el CSV
             csvWriter.println("Frame,AverageAliveNeighbours");
@@ -60,24 +60,30 @@ public class App {
 
                 for (Cell cell : board.getCells()) {
                     Cell newCell = new Cell(cell.getCoordinates());
+                    count  += cell.getState() == State.ALIVE? 1:0;
 
                     int aliveNeighbours = neighbours.get(cell.getCoordinates()).stream()
                             .mapToInt(c -> board.getCell(c).getState() == State.ALIVE ? 1 : 0)
                             .sum();
-                    count += aliveNeighbours;
+                    
                     newCell.setState(cell.getState() == State.ALIVE
                             ? (aliveNeighbours >= minAlive && aliveNeighbours <= maxAlive ? State.ALIVE : State.DEAD)
                             : (aliveNeighbours == newCellNum ? State.ALIVE : State.DEAD));
                     newMap.put(cell.getCoordinates(), newCell);
                 }
 
-                Double avgAliveNeighbours = count/Math.pow(board.getSize(),board.getDimensions()) ;
+                avgAliveNeighbours = count/Math.pow(board.getSize(),board.getDimensions()) ;
             
-            // Escribir el frame y el promedio en el CSV
                 csvWriter.println(board.getFrames() + "," + avgAliveNeighbours);
                 
                 board.update(newMap);
             }
+            for(Cell cell : board.getCells()){
+                count += cell.getState() == State.ALIVE? 1:0;
+            }
+            avgAliveNeighbours = count/Math.pow(board.getSize(),board.getDimensions()) ;
+            csvWriter.println(board.getFrames() + "," + avgAliveNeighbours);
+                
             board.update(newMap);
         } catch (IOException e) {
             e.printStackTrace();
