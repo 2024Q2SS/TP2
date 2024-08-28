@@ -1,6 +1,28 @@
 {
-  "size": 50,
-  "dimensions": 3,
+  "size": 150,
+  "dimensions": 2,
   "system": "conway",
-  "density": 0.2
+  "density": 0.65,
+    
+    "systemConfig":{
+        "conway":
+        {
+            "minAlive":2,
+            "maxAlive":3,
+            "newCell":3
+        },
+        "big1":
+        {
+            "minAlive":1,
+            "maxAlive":4,
+            "newCell":4
+        },
+        "augmented":
+        {
+            "minAlive":3,
+            "maxAlive":5,
+            "newCell":2
+        }
+    }
+    
 }

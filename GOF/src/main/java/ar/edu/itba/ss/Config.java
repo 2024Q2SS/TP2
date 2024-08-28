@@ -1,16 +1,20 @@
 package ar.edu.itba.ss;
 
+import java.util.Map;
+
 public class Config {
     private final Integer size;
     private final Integer dimensions;
     private final String system;
     private final Float density;
+    private Map<String, SystemConfig> systemConfig;
 
-    public Config(Integer size, Integer dimensions, String system, Float density) {
+    public Config(Integer size, Integer dimensions, String system, Float density, Map<String, SystemConfig> systemConfig) {
         this.size = size;
         this.dimensions = dimensions;
         this.system = system;
         this.density = density;
+        this.systemConfig = systemConfig;
     }
 
     @Override
@@ -20,6 +24,7 @@ public class Config {
                 ", dimensions=" + dimensions +
                 ", system='" + system + '\'' +
                 ", density=" + density +
+                ", systemConfig=" + systemConfig +
                 '}';
     }
 
@@ -38,4 +43,35 @@ public class Config {
     public Float getDensity() {
         return density;
     }
-}
+
+    public SystemConfig getSystemConfig(String systemName) {
+        return systemConfig.get(systemName);
+    }
+
+    public static class SystemConfig {
+        private int minAlive;
+        private int maxAlive;
+        private int newCell;
+
+        // Getters
+        public int getMinAlive() {
+            return minAlive;
+        }
+
+        public int getMaxAlive() {
+            return maxAlive;
+        }
+
+        public int getNewCell() {
+            return newCell;
+        }
+
+        @Override
+        public String toString() {
+            return "SystemConfig{" +
+                    "minAlive=" + minAlive +
+                    ", maxAlive=" + maxAlive +
+                    ", newCell=" + newCell +
+                    '}';
+        }
+    }}

@@ -13,6 +13,10 @@ public class MooreVicinity implements VicinityRule {
     public MooreVicinity(int radius) {
         this.radius = radius;
     }
+    
+    public Integer maxNeighbours(Integer dimensions){
+       return dimensions ==2? 8:26;
+    }
 
     public void addRelationToMap(HashMap<Coordinates, Set<Coordinates>> neighbours, Cell cell, Cell neighbour) {
         // added to neighbour set
