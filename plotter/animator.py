@@ -1,8 +1,10 @@
 import os
 import json
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageColor
 from mpl_toolkits.mplot3d import Axes3D
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 import matplotlib.pyplot as plt
+from matplotlib.colors import to_rgba
 import numpy as np
 
 # Function to draw the grid in 2D based on the current state
@@ -11,10 +13,27 @@ def draw_grid_2d(cells, size):
     draw = ImageDraw.Draw(img)
 
     cell_size = size // grid_size
+    vibrant_purple = ImageColor.getrgb("#800080")  # More vibrant purple
+    vibrant_yellow = ImageColor.getrgb("#FFFF00")  # Vibrant yellow
+    
     for cell in cells:
         x = cell["coordinates"]["x"] * cell_size
         y = cell["coordinates"]["y"] * cell_size
-        color = "black" if cell["state"] == "ALIVE" else "white"
+
+        if cell["state"] == "ALIVE":
+            # Calculate the proximity to the nearest border
+            dist_to_border = min(cell["coordinates"]["x"], cell["coordinates"]["y"],
+                                 grid_size - cell["coordinates"]["x"] - 1, grid_size - cell["coordinates"]["y"] - 1)
+
+            # Normalize the distance to a 0-1 range
+            max_distance = grid_size // 2
+            normalized_dist = dist_to_border / max_distance
+
+            # Map the normalized distance to a color between vibrant purple and yellow
+            color = tuple(int(a + normalized_dist * (b - a)) for a, b in zip(vibrant_purple, vibrant_yellow))
+        else:
+            color = "white"
+
         draw.rectangle([x, y, x + cell_size, y + cell_size], fill=color)
         draw.rectangle([x, y, x + cell_size, y + cell_size], outline="gray")  # draw the cell boundaries
 
@@ -25,12 +44,29 @@ def draw_grid_3d(cells, size):
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     
-    x_vals = [cell["coordinates"]["x"] for cell in cells if cell["state"] == "ALIVE"]
-    y_vals = [cell["coordinates"]["y"] for cell in cells if cell["state"] == "ALIVE"]
-    z_vals = [cell["coordinates"]["z"] for cell in cells if cell["state"] == "ALIVE"]
+    vibrant_purple = np.array(ImageColor.getrgb("#800080")) / 255.0  # Normalize RGB to 0-1 range
+    vibrant_yellow = np.array(ImageColor.getrgb("#FFFF00")) / 255.0  # Normalize RGB to 0-1 range
     
-    ax.scatter(x_vals, y_vals, z_vals, c='black', marker='s')
+    for cell in cells:
+        if cell["state"] == "ALIVE":
+            x = cell["coordinates"]["x"]
+            y = cell["coordinates"]["y"]
+            z = cell["coordinates"]["z"]
 
+            # Calculate the proximity to the nearest border
+            dist_to_border = min(x, y, z, grid_size - x - 1, grid_size - y - 1, grid_size - z - 1)
+
+            # Normalize the distance to a 0-1 range
+            max_distance = grid_size // 2
+            normalized_dist = dist_to_border / max_distance
+
+            # Map the normalized distance to a color between vibrant purple and yellow
+            color = vibrant_purple + normalized_dist * (vibrant_yellow - vibrant_purple)
+            color = to_rgba(color)  # Ensure it's in the correct RGBA format
+
+            # Draw the cell
+            ax.bar3d(x, y, z, 1, 1, 1, color=[color])
+    
     ax.set_xlim([0, grid_size])
     ax.set_ylim([0, grid_size])
     ax.set_zlim([0, grid_size])
