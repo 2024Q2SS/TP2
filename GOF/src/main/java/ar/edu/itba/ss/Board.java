@@ -143,10 +143,10 @@ public class Board {
             }
         }
 
-        if (pastStates.contains(cellMap)) {
-            System.out.println("termino porque se repitio el estado");
-            return true;
-        }
+        // if (pastStates.contains(cellMap)) {
+        // System.out.println("termino porque se repitio el estado");
+        // return true;
+        // }
         return false;
     }
 

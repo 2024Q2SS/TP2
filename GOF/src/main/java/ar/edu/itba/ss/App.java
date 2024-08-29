@@ -48,7 +48,7 @@ public class App {
             // Escribir encabezado en el CSV
             csvWriter.println("frame,average_alive_cells");
 
-            while (!board.finalState() && board.getFrames() <= 10000) {
+            while (!board.finalState() && board.getFrames() <= 1000) {
                 System.out.println("Frame: " + board.getFrames());
                 newMap = new HashMap<>();
 
