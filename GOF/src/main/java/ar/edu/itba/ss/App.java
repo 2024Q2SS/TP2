@@ -31,24 +31,19 @@ public class App {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Config.SystemConfig sysConfig = config.getSystemConfig(config.getSystem());
 
-        minAlive = sysConfig.getMinAlive();
-        maxAlive = sysConfig.getMaxAlive();
-        newCellNum = sysConfig.getNewCell();
-        System.out.println(sysConfig);
         board = new Board(config.getSize(), config.getDimensions());
     }
 
-    public void GOF2D(Integer runNumber) {
+    public void GOF2D(String system, Integer runNumber) {
         board.setCells(config.getDensity());
         Map<Coordinates, Set<Coordinates>> neighbours = new MooreVicinity(1).getNeighbours(board);
         Map<Coordinates, Cell> newMap = new HashMap<>();
         Integer count = 0;
 
-        String path = Paths.get(rootDir, config.getSystem() + "_" + config.getDensity() + "_" + runNumber + ".csv")
+        String path = Paths
+                .get(rootDir, system + "_" + config.getDensity() + "_" + runNumber + ".csv")
                 .toString();
-        Double avgAliveNeighbours;
         try (PrintWriter csvWriter = new PrintWriter(new FileWriter(path))) {
             // Escribir encabezado en el CSV
             csvWriter.println("frame,average_alive_cells");
@@ -100,10 +95,16 @@ public class App {
         app.setUp();
         System.out.println("setup finished");
         System.out.println(config);
-        if (config.getSystem().equals("conway")) {
-            for (int i = 1; i <= config.getRuns(); i++)
-                app.GOF2D(i);
+        for (String string : config.getSystems()) {
+            Config.SystemConfig sysConfig = config.getSystemConfig(string);
+            minAlive = sysConfig.getMinAlive();
+            maxAlive = sysConfig.getMaxAlive();
+            newCellNum = sysConfig.getNewCell();
+            System.out.println("Running with system: "
+                    + string + " minAlive: " + minAlive + " maxAlive: " + maxAlive + " newCell: " + newCellNum);
+            for (int i = 1; i <= config.getRuns(); i++) {
+                app.GOF2D(string, i);
+            }
         }
-
     }
 }

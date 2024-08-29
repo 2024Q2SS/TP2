@@ -1,20 +1,21 @@
 package ar.edu.itba.ss;
 
 import java.util.Map;
+import java.util.List;
 
 public class Config {
     private final Integer size;
     private final Integer dimensions;
-    private final String system;
+    private final List<String> systems;
     private final Float density;
     private final Integer runs;
     private Map<String, SystemConfig> systemConfig;
 
-    public Config(Integer size, Integer dimensions, String system, Float density, Integer runs,
+    public Config(Integer size, Integer dimensions, List<String> systems, Float density, Integer runs,
             Map<String, SystemConfig> systemConfig) {
         this.size = size;
         this.dimensions = dimensions;
-        this.system = system;
+        this.systems = systems;
         this.density = density;
         this.systemConfig = systemConfig;
         this.runs = runs;
@@ -25,7 +26,7 @@ public class Config {
         return "Config{" +
                 "size=" + size +
                 ", dimensions=" + dimensions +
-                ", system='" + system + '\'' +
+                ", systems='" + systems + '\'' +
                 ", density=" + density +
                 ", systemConfig=" + systemConfig +
                 '}';
@@ -39,8 +40,8 @@ public class Config {
         return dimensions;
     }
 
-    public String getSystem() {
-        return system;
+    public List<String> getSystems() {
+        return systems;
     }
 
     public Float getDensity() {
