@@ -1,8 +1,8 @@
 {
-  "size": 100,
-  "dimensions": 2,
+  "size": 75,
+  "dimensions": 3,
   "systems": ["conway", "augmented", "big1"],
-  "density": 0.8,
+ "density": 0.8,
   "runs": 10,
   "systemConfig": {
     "conway": {
