@@ -102,7 +102,7 @@ dimensions = config["dimensions"]  # either 2 or 3
 images = []
 
 # Load each JSON file and create an image
-output_folder = "../GOF/output"
+output_folder = "../GOF/output/augmented/0.4/1"
 files = sorted([f for f in os.listdir(output_folder) if f.startswith("frame") and f.endswith(".json")],
                key=lambda x: int(x.replace("frame", "").replace(".json", "")))
 

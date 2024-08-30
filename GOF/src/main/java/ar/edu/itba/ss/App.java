@@ -39,54 +39,27 @@ public class App {
         board.setCells(config.getDensity());
         Map<Coordinates, Set<Coordinates>> neighbours = new MooreVicinity(1).getNeighbours(board);
         Map<Coordinates, Cell> newMap = new HashMap<>();
-        Integer count = 0;
 
-        String path = Paths
-                .get(rootDir, system + "_" + config.getDensity() + "_" + runNumber + ".csv")
-                .toString();
-        try (PrintWriter csvWriter = new PrintWriter(new FileWriter(path))) {
-            // Escribir encabezado en el CSV
-            csvWriter.println("frame,average_alive_cells");
+        while (!board.finalState() && board.getFrames() <= 1000) {
+            System.out.println("Frame: " + board.getFrames());
+            newMap = new HashMap<>();
 
-            while (!board.finalState() && board.getFrames() <= 1000) {
-                System.out.println("Frame: " + board.getFrames());
-                newMap = new HashMap<>();
-
-                for (Cell cell : board.getCells()) {
-                    Cell newCell = new Cell(cell.getCoordinates());
-                    count += cell.getState() == State.ALIVE ? 1 : 0;
-
-                    int aliveNeighbours = neighbours.get(cell.getCoordinates()).stream()
-                            .mapToInt(c -> board.getCell(c).getState() == State.ALIVE ? 1 : 0)
-                            .sum();
-
-                    newCell.setState(cell.getState() == State.ALIVE
-                            ? (aliveNeighbours >= minAlive && aliveNeighbours <= maxAlive ? State.ALIVE : State.DEAD)
-                            : (aliveNeighbours == newCellNum ? State.ALIVE : State.DEAD));
-                    newMap.put(cell.getCoordinates(), newCell);
-                }
-
-                // avgAliveNeighbours = count / Math.pow(board.getSize(),
-                // board.getDimensions());
-                // csvWriter.println(board.getFrames() + "," + avgAliveNeighbours);
-                csvWriter.println(board.getFrames() + "," + count);
-
-                board.update(newMap);
-                count = 0;
-            }
             for (Cell cell : board.getCells()) {
-                count += cell.getState() == State.ALIVE ? 1 : 0;
+                Cell newCell = new Cell(cell.getCoordinates());
+
+                int aliveNeighbours = neighbours.get(cell.getCoordinates()).stream()
+                        .mapToInt(c -> board.getCell(c).getState() == State.ALIVE ? 1 : 0)
+                        .sum();
+
+                newCell.setState(cell.getState() == State.ALIVE
+                        ? (aliveNeighbours >= minAlive && aliveNeighbours <= maxAlive ? State.ALIVE : State.DEAD)
+                        : (aliveNeighbours == newCellNum ? State.ALIVE : State.DEAD));
+                newMap.put(cell.getCoordinates(), newCell);
             }
 
-            // avgAliveNeighbours = count / Math.pow(board.getSize(),
-            // board.getDimensions());
-            // csvWriter.println(board.getFrames() + "," + avgAliveNeighbours);
-            csvWriter.println(board.getFrames() + "," + count);
-
-            board.update(newMap);
-        } catch (IOException e) {
-            e.printStackTrace();
+            board.update(newMap, system, runNumber, config.getDensity());
         }
+        board.update(newMap, system, runNumber, config.getDensity());
         board.reset();
     }
 

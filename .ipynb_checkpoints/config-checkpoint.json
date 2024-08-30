@@ -1,9 +1,9 @@
 {
-  "size": 100,
+  "size": 75,
   "dimensions": 2,
-  "system": "conway",
-  "density": 0.4,
-  "runs": 1,
+  "systems": ["conway", "augmented", "big1"],
+  "density": 0.2,
+  "runs": 10,
   "systemConfig": {
     "conway": {
       "minAlive": 2,

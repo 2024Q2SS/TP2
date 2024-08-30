@@ -1,5 +1,6 @@
 package ar.edu.itba.ss;
 
+import java.io.File;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Collection;
@@ -143,10 +144,6 @@ public class Board {
             }
         }
 
-        // if (pastStates.contains(cellMap)) {
-        // System.out.println("termino porque se repitio el estado");
-        // return true;
-        // }
         return false;
     }
 
@@ -163,15 +160,21 @@ public class Board {
         return cellMap.get(coordinates);
     }
 
-    public void update(Map<Coordinates, Cell> map) {
+    public void update(Map<Coordinates, Cell> map, String system, Integer runNumber, Float density) {
         Gson gson = new Gson();
-        String path = "output/frame" + frames + ".json";
+        String path = "output/" + system + "/" + density + "/" + runNumber + "/frame" + frames + ".json";
         String rootDir = System.getProperty("user.dir");
 
         if (!Paths.get(path).isAbsolute()) {
             path = Paths.get(rootDir, path).toString();
         }
-        try (FileWriter writer = new FileWriter(path)) {
+        final File file = new File(path);
+        final File parentDirectory = file.getParentFile();
+        if (!parentDirectory.exists() && !parentDirectory.mkdirs()) {
+            throw new IllegalStateException("Couldn't create directory: " + parentDirectory);
+        }
+
+        try (FileWriter writer = new FileWriter(file)) {
             gson.toJson(cellMap.values(), writer);
         } catch (Exception e) {
             e.printStackTrace();
